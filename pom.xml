@@ -36,6 +36,18 @@
 			<version>${spring-native.version}</version>
 		</dependency>
 
+		<!-- AWS -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-function-adapter-aws</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+
 		<!-- Web Scraping -->
 		<dependency>
 			<groupId>net.sourceforge.htmlunit</groupId>
