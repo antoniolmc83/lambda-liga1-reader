@@ -1,23 +1,15 @@
 package com.almc.liga1.lambda.reader.webscraping.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Estadistica {
 
     private Integer puntos;
-    @JsonProperty("p_jugados")
     private Integer partidosJugados;
-    @JsonProperty("p_ganados")
     private Integer partidosGanados;
-    @JsonProperty("p_empatados")
     private Integer partidosEmpatados;
-    @JsonProperty("p_perdidos")
     private Integer partidosPerdidos;
-    @JsonProperty("goles_favor")
     private Integer golesFavor;
-    @JsonProperty("goles_contra")
     private Integer golesContra;
-    @JsonProperty("goles_diff")
     private Integer golesDiferencia;
 
 
