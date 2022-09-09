@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   lambda:
-    image: almc/my-spring-native-aws-builder
+    image: my-spring-native-aws-builder:lastest
     build: .
     volumes:
       - ./:/app
