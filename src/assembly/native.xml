@@ -16,5 +16,15 @@
                 <include>bootstrap</include>
             </includes>
         </fileSet>
+        <fileSet>
+            <directory>target</directory>
+            <outputDirectory>/</outputDirectory>
+            <useDefaultExcludes>true</useDefaultExcludes>
+            <fileMode>0775</fileMode>
+            <includes>
+                <!-- Change me to match artifactId -->
+                <include>lambda-liga1-reader</include>
+            </includes>
+        </fileSet>
     </fileSets>
 </assembly>
