@@ -18,4 +18,5 @@ RUN curl -s "https://get.sdkman.io" | bash &&     source "/root/.sdkman/bin/sdkm
 
 WORKDIR /app
 COPY ./build_mvn.sh /
+RUN chmod u+x  /build_mvn.sh
 CMD ["../build_mvn.sh"]
