@@ -17,5 +17,5 @@ ENV SKIP_TESTS=true
 RUN curl -s "https://get.sdkman.io" | bash &&     source "/root/.sdkman/bin/sdkman-init.sh" &&     sdk install java ${GRAALVM_VERSION} &&     sdk flush &&     ${JAVA_HOME}/bin/gu install native-image
 
 WORKDIR /app
-COPY ./build.sh /
-CMD ["../build.sh"]
+COPY ./build_mvn.sh /
+CMD ["../build_mvn.sh"]
