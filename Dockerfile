@@ -2,9 +2,10 @@ FROM amazonlinux:2 AS my-spring-native-aws-builder
 
 RUN yum update -y
 RUN yum groupinstall -y "Development Tools"
-RUN yum install -y     gcc     glibc-devel     gzip     tar     unzip  \
-    wget     which     zip     zlib-devel     yum clean all \
-    fontconfig freetype
+RUN yum install -y wget tar gzip bzip2-devel ed gcc gcc-c++ gcc-gfortran \
+        less libcurl-devel openssl openssl-devel readline-devel xz-devel \
+        zlib-devel glibc-static libcxx libcxx-devel llvm-toolset-7 zlib-static \
+        fontconfig freetype
 RUN rm -rf /var/cache/yum
 
 
